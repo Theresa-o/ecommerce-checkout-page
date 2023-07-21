@@ -1,6 +1,6 @@
 import React from "react";
 
-function PaymentPage() {
+function PaymentPage({ formData, setFormData }) {
   return (
     <div className="payment-container">
       <input type="number" placeholder="Card Number" />

@@ -1,38 +1,96 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.form {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.progressBar {
+  height: 5px;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+
+.progressBar div {
+  height: 100%;
+  border-radius: 5px;
+  background: linear-gradient(
+    to right,
+    #ffbc2f 0%,
+    #ffbc2f 33.3%,
+    #36b100 33.3%,
+    #36b100 66.6%,
+    #00acee 66.6%,
+    #00acee 100%
+  );
+  transition: width 0.3s ease;
+}
+
+.form-container {
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+.body {
+  padding: 10px;
+}
+
+.body input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.footer button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #256372;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer button:hover {
+  opacity: 0.8;
+}
+
+.footer button:disabled {
+  background-color: #333;
+  cursor: not-allowed;
 }
